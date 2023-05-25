@@ -2,9 +2,11 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>
-      
-    </div>
+    <section className='lg:h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-no-repeat lg:bg-center py-32 lg:py-0 overflow-hidden'>
+        <div className="container mx-auto">
+    hero
+        </div>
+    </section>
   )
 }
 
