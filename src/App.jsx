@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from './component/Header'
 
 const App = () => {
   return (
-    <div className='text-2xl text-red-400 font-bold'>
-      fahim
-    </div>
+    <>
+      <Header/>
+      <div className='h-[2000px]'></div>
+    </>
   )
 }
 
