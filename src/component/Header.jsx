@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../assets/img/logo.svg'
+import logo from '../assets/img/1.png'
 import { navigation, social } from '../data'
 import { Link } from 'react-scroll'
 import NavMobile from './NavMobile'
@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
         <a href="#">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className='w-[200px] pt-3'/>
         </a>
         {/* navbar design */}
         <nav className='hidden lg:flex'>
