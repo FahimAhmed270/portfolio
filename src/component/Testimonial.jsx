@@ -22,7 +22,7 @@ const Testimonial = () => {
                         modules={[Pagination, Autoplay]}
                         spaceBetween={50}
                         pagination={{ clickable: true }}
-                        autoplay={{ delay:7500, disableOnInteraction:false}}
+                        autoplay={{ delay: 7500, disableOnInteraction: false }}
                         className='mySwiper'
                     >
                         {testimonials.map((item, id) => {
