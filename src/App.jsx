@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './component/About'
+import BackTopBottom from './component/BackTopBottom'
 import Brands from './component/Brands'
 import Contact from './component/Contact'
 import Footer from './component/Footer'
@@ -23,7 +24,7 @@ const App = () => {
       <Testimonial/>
       <Contact/>
       <Footer/>
-      <div className='h-[2000px]'></div>
+      <BackTopBottom/>
     </>
   )
 }

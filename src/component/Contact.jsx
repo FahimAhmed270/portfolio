@@ -29,13 +29,13 @@ const Contact = () => {
                         })}
                     </div>
                     {/* form design */}
-                    <form action="" className='space-y-8 w-full max-w-[780px]'>
+                    <form action="https://formspree.io/f/mbjeeqla" method='POST' className='space-y-8 w-full max-w-[780px]'>
                         <div className='flex gap-8'>
-                            <input className='input' type="text" placeholder='Your Name'/>
-                            <input className='input' type="email" placeholder='Your Email'/>
+                            <input className='input' type="text" placeholder='Your Name' name='name'/>
+                            <input className='input' type="email" placeholder='Your Email' name='email'/>
                         </div>
-                        <input className='input' type="email" placeholder='Subject'/>
-                        <textarea className='textarea' placeholder='Your Messages'></textarea>
+                        <input className='input' type="text" placeholder='Subject' name='subject'/>
+                        <textarea className='textarea' placeholder='Your Messages' name='textarea'></textarea>
                         <button className='btn btn-lg bg-accent hover:bg-accent-hover'>Send Me</button>
                     </form>
                 </div>

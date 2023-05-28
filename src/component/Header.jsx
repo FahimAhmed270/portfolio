@@ -3,6 +3,7 @@ import logo from '../assets/img/1.png'
 import { navigation, social } from '../data'
 import { Link } from 'react-scroll'
 import NavMobile from './NavMobile'
+import { BsFillSunFill, BsMoonFill, BsCheck } from 'react-icons/bs';
 
 const Header = () => {
   const [bg, setBg] = useState(false)
@@ -12,8 +13,9 @@ const Header = () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false)
     })
   })
+ 
   return (
-    <header className={`${bg ? 'bg-tertiary h-20' : 'h-24'} flex items-center fixed top-0 w-full z-10 text-white transition-all duration-300`}>
+    <header className={`${bg ? 'bg-tertiary h-20' : 'h-24'} flex items-center fixed top-0 w-full z-10 text-white transition-all duration-300 dark:bg-[#fff]`}>
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
         <a href="#">
@@ -21,7 +23,7 @@ const Header = () => {
         </a>
         {/* navbar design */}
         <nav className='hidden lg:flex'>
-          <ul className='flex capitalize gap-x-8 text-[17px]'>
+          <ul className='flex capitalize gap-x-8 text-[17px] dark:text-black'>
             {navigation.map((item, id) => {
               const { name, href } = item
               return (
